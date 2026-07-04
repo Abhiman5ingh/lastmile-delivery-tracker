@@ -1,17 +1,15 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://lastmile-delivery-tracker-3vcn.onrender.com",
+  baseURL: "https://lastmile-delivery-tracker-3vcn.onrender.com/api",
 });
 
-API.interceptors.request.use((config) => {
+API.interceptors.request.use((req) => {
   const token = localStorage.getItem("token");
-
   if (token) {
-    config.headers.Authorization = `Bearer ${token}`;
+    req.headers.Authorization = `Bearer ${token}`;
   }
-
-  return config;
+  return req;
 });
 
 export default API;
