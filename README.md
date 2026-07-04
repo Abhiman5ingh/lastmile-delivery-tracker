@@ -118,19 +118,6 @@ MongoDB Database
 
 ---
 
-## 📸 Screenshots
-
-Add images in `/assets` folder:
-
-- Landing Page → ./assets/landing.png  
-- Login Page → ./assets/login.png  
-- Create Order → ./assets/create-order.png  
-- Admin Dashboard → ./assets/admin.png  
-- Agent Dashboard → ./assets/agent.png  
-- Tracking Page → ./assets/tracking.png  
-
----
-
 ## 🔌 API Endpoints
 
 ### Auth
